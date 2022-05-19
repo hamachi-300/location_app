@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+    <link rel="icon" href="img/icons8-location-24.png" type="image/x-icon">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <style type="text/css">#map-canvas{height:300px; margin-left: 15vw; margin-right: 15vw;}</style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header style="text-align:center">
+    <h1>Locate your location</h1>
+    <h4>just click button below</h4>
+    <hr><br><br>
+    <input type="button" value="Show info" onclick="javascript:showlocation()"/> <br>
+</header>
+
+<br/><br/>
+<div id="map-canvas"></div>
+<br><br>
+<footer style="text-align: center;">
+    <span id="error" style="color: red;"></span>
+    <h3>INFO</h3>
+    Latitude: <span id="latitude">-</span><br><br>
+    Longitude: <span id="longitude">-</span><br><br>
+    Accuracy: <span id="accuracy">-</span><br><br>
+    Altitude: <span id="altitude">-</span><br><br>
+    Altitude Accuracy: <span id="alt-accuracy">-</span><br><br>
+    Speed: <span id="speed">-</span>
+    <br><span id="stop"></span>
+</footer>
+<script src="api.js"></script>
+</body>
+</html>
